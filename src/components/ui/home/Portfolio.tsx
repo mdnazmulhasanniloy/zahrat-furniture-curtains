@@ -38,10 +38,10 @@ const Portfolio = () => {
 
   return (
     <div className="container my-20">
-      <h2 className="text-center text-3xl font-medium mb-6 ">
+      <h2 className="text-center text-2xl md:text-3xl font-medium mb-6 ">
         Visit My Previous Work Sample
       </h2>
-      <div className="grid grid-cols-4 gap-2">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
         {images.map((item, index) => (
           <div
             key={index}

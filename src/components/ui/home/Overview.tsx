@@ -23,15 +23,28 @@ const Overview = () => {
   ];
   return (
     <div className="container my-14">
-      <div className="grid sm:grid-cols-2 md:grid-cols-2 grid-cols-3 gap-12">
+      <div className="grid sm:grid-cols-1 md:grid-cols-3">
         {services.map((service, index) => (
           <div key={index} className=" text-center p-5">
             <div className="flex justify-center">{service.icon}</div>
-            <h2 className="text-2xl font-medium text-secondary my-4">
+            <h2 className="text-xl md:text-2xl font-medium text-secondary my-4">
               {service.title}
             </h2>
-            <p className="text-xl text-gray">{service.description}</p>
+            <p className="text-md md:text-xl text-gray">
+              {service.description}
+            </p>
           </div>
+        ))}
+      </div>
+      <div className="grid grid-cols-1">
+        {services.map((service, index) => (
+          <></>
+
+          //    <h2 className="text-2xl font-medium text-secondary my-4">
+          //      {service.title}
+          //    </h2>
+          //    <p className="text-xl text-gray">{service.description}</p>
+          //  </div>
         ))}
       </div>
     </div>
