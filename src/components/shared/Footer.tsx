@@ -39,7 +39,7 @@ export default function Footer() {
             {/*  */}
           </div>
           <div className="text-white sm:text-left md:mx-auto">
-            <h2 className="uppercase text-left">Quick Links</h2>
+            <h2 className="uppercase text-left md:text-center">Quick Links</h2>
             <div className="flex md:flex-col mt-3 md:mt-8 gap-4">
               <Link
                 href="/contact"
@@ -61,14 +61,16 @@ export default function Footer() {
               </Link>
             </div>
           </div>
-          <div className="text-white md:mx-auto">
+          <div className="text-white sm:text-left md:mx-auto">
             <h2 className="uppercase sm:text-left md:text-center">
               CONTACT DETAILS
             </h2>
             <div className="flex flex-col mt-8 gap-4">
-              <p className="flex items-center gap-2 sm:text-sm md:text-lg">
+              <p className="flex items-center md:gap-2">
                 <MapPin color="#fff" />
-                Al Nad - Al Qasimia - Sharjah - United Arab Emirates
+                <span className="text-sm">
+                  Al Nad - Al Qasimia - Sharjah - United Arab Emirates
+                </span>
               </p>
               <p className="flex items-center gap-2">
                 <Phone color="#fff" />
@@ -81,7 +83,9 @@ export default function Footer() {
             </div>
           </div>
           <div className="text-white mx-auto">
-            <h2 className="uppercase">Get in touch</h2>
+            <h2 className="uppercase !text-left md:!text-center">
+              Get in touch
+            </h2>
             <div className="flex mt-8 gap-4">
               {socialItems.map((item, index) => {
                 const uri =
