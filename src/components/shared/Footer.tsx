@@ -1,0 +1,108 @@
+"use client";
+import { Facebook, Mail, MapPin, Phone, Youtube } from "lucide-react";
+import Link from "next/link";
+
+export default function Footer() {
+  const socialItems = [
+    {
+      icon: <Facebook color="#fff" />,
+      link: "https://www.facebook.com/share/1BEf31DiLB",
+      bgColor: "bg-blue-500",
+      title: "fa",
+    },
+    {
+      icon: <Youtube color="#fff" />,
+      link: "https://youtube.com/@madinatcurtains6090?si=pl_AFraiZjmOxAas",
+      bgColor: "bg-[#ff0000]",
+      title: "yo",
+    },
+    {
+      icon: <Mail color="#fff" />,
+      link: "humayonkobir173 @gmail.com",
+      bgColor: "bg-[#fbbc04]",
+      title: "ma",
+    },
+  ];
+  return (
+    <>
+      <div className="bg-black text-center md:text-start">
+        <div className="grid grid-cols-1 md:grid-cols-4  container gap-14 py-24">
+          <div>
+            <img alt="image" width="60%" src="/logo-org.png" />
+
+            <p className="text-white mt-5">
+              *We're a furniture brand that carries everything needed to make
+              your house or office look modern with minimal furniture's and
+              boosts up your work energy!
+            </p>
+
+            {/*  */}
+          </div>
+          <div className="text-white mx-auto">
+            <h2 className="uppercase">Quick Links</h2>
+            <div className="flex flex-col mt-8 gap-4">
+              <Link href="/contact" className="hover:underline duration-200">
+                Map Direction
+              </Link>
+              <Link href="/faq" className="hover:underline duration-200">
+                FAQ
+              </Link>
+              <Link
+                href="/happy-clients"
+                className="hover:underline duration-200"
+              >
+                Happy clients
+              </Link>
+            </div>
+          </div>
+          <div className="text-white mx-auto">
+            <h2 className="uppercase">CONTACT DETAILS</h2>
+            <div className="flex flex-col mt-8 gap-4">
+              <p className="flex items-center gap-2">
+                <MapPin color="#fff" />
+                Al Nad - Al Qasimia - Sharjah - United Arab Emirates
+              </p>
+              <p className="flex items-center gap-2">
+                <Phone color="#fff" />
+                +971569024192
+              </p>
+              <p className="flex items-center gap-2">
+                <Mail color="#fff" />
+                humayonkobir173 @gmail.com
+              </p>
+            </div>
+          </div>
+          <div className="text-white mx-auto">
+            <h2 className="uppercase">Get in touch</h2>
+            <div className="flex mt-8 gap-4">
+              {socialItems.map((item, index) => {
+                const uri =
+                  item.title === "ma" ? `mailto:${item.link}` : item.link;
+                return (
+                  <div
+                    className="border w-10 h-10 flex justify-center items-center rounded"
+                    key={index}
+                  >
+                    <a
+                      key={index}
+                      href={uri}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {item.icon}
+                    </a>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+        <div className="pb-5">
+          <p className="text-white text-center">
+            © 2025 Madinat al Zahrat Furniture & Curtains.
+          </p>
+        </div>
+      </div>
+    </>
+  );
+}
