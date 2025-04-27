@@ -46,20 +46,18 @@ const MobileNav = ({ leftLinks }: any) => {
   const [hideMobileMenu, setHideMobileMenu] = React.useState(false);
   const pathname = usePathname();
   return (
-    <div className={cn(
-      "transition-all duration-300 ease-in-out lg:hidden border-2 border-red-400"
-    )}>
+    <div className={cn("transition-all duration-300 ease-in-out lg:hidden")}>
       {/* Menu Header */}
-      <div className="relative flex items-center justify-between px-4">
+      <div className="relative flex items-center justify-between px-4 ">
         {/* menu icon */}
         <button
           className="w-1/3"
           onClick={() => setHideMobileMenu(!hideMobileMenu)}
         >
           {hideMobileMenu ? (
-            <Menu color="#FE6201" size={24} />
+            <Menu color="#FE6201" size={36} />
           ) : (
-            <X color="#FE6201" size={24} />
+            <X color="#FE6201" size={36} />
           )}
         </button>
 

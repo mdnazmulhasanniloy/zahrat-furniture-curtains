@@ -109,7 +109,7 @@ const Navbar = () => {
         )}
       >
         {/* Menu Header */}
-        <div className="relative flex items-center justify-between px-4 bg-black ">
+        <div className="relative flex items-center justify-between px-4 bg-black border h-[50px]">
           {/* menu icon */}
           <button
             className="w-1/3"
@@ -129,7 +129,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Links */}
-        <div className="absolute md:hidden top-[] left-0 z-[9999] h-auto w-full">
+        <div className="absolute md:hidden top-[] left-0 z-[9999] w-full">
           <AnimatePresence>
             {!hideMobileMenu && (
               <motion.div
