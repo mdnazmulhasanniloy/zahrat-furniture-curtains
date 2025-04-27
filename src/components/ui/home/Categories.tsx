@@ -37,10 +37,10 @@ const Categories = () => {
   return (
     <div className="container py-14">
       <div className="text-center">
-        <h2 className="text-4xl font-bold text-gray">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray">
           We do work furniture a little bit different.
         </h2>
-        <p className="text-lg">
+        <p className="text-md md:text-lg">
           That means easy, affordable, and flexible—whether you’re furnishing
           your home office or your business.
         </p>

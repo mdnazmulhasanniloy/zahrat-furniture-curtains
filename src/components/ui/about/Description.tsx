@@ -1,6 +1,6 @@
 const Description = () => {
   return (
-    <div className="container px-28">
+    <div className="container px-5 md:px-28">
       <p className="pt-6">
         We are well aware that in today’s market If you want a premium quality
         furniture especially for an office, It is too expensive to purchase. We

@@ -22,7 +22,7 @@ const ContactInfo = () => {
 
   return (
     <div className="container relative">
-      <div className="grid grid-cols-3 gap-5 px-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 px-6">
         {contactInfo.map((item, index) => (
           <div
             key={index}

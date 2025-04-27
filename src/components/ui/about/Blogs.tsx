@@ -14,10 +14,10 @@ const Blogs = () => {
     },
   ];
   return (
-    <div className="container px-28 mb-14">
-      <div className="grid grid-cols-2 gap-5">
+    <div className="container px-5 md:px-28 mb-14">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full">
         {contents.map((item, index) => (
-          <div key={index}>
+          <div key={index} className="w-full">
             <img src={item.image} alt="" />
             <div>
               <h2 className="text-3xl py-4">{item.title}</h2>

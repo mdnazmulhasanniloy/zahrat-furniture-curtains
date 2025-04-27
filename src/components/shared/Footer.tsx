@@ -25,12 +25,12 @@ export default function Footer() {
   ];
   return (
     <>
-      <div className="bg-black text-center md:text-start">
+      <div className="bg-black text-center md:text-start px-3">
         <div className="grid grid-cols-1 md:grid-cols-4  container gap-14 py-24">
           <div>
             <img alt="image" width="60%" src="/logo-org.png" />
 
-            <p className="text-white mt-5">
+            <p className="text-white mt-5 text-left text-sm">
               *We're a furniture brand that carries everything needed to make
               your house or office look modern with minimal furniture's and
               boosts up your work energy!
@@ -38,27 +38,35 @@ export default function Footer() {
 
             {/*  */}
           </div>
-          <div className="text-white mx-auto">
-            <h2 className="uppercase">Quick Links</h2>
-            <div className="flex flex-col mt-8 gap-4">
-              <Link href="/contact" className="hover:underline duration-200">
+          <div className="text-white sm:text-left md:mx-auto">
+            <h2 className="uppercase text-left">Quick Links</h2>
+            <div className="flex md:flex-col mt-3 md:mt-8 gap-4">
+              <Link
+                href="/contact"
+                className="hover:underline duration-200 text-sm md:text-lg"
+              >
                 Map Direction
               </Link>
-              <Link href="/faq" className="hover:underline duration-200">
+              <Link
+                href="/faq"
+                className="hover:underline duration-200 text-sm  md:text-lg"
+              >
                 FAQ
               </Link>
               <Link
                 href="/happy-clients"
-                className="hover:underline duration-200"
+                className="hover:underline duration-200 text-sm  md:text-lg"
               >
                 Happy clients
               </Link>
             </div>
           </div>
-          <div className="text-white mx-auto">
-            <h2 className="uppercase">CONTACT DETAILS</h2>
+          <div className="text-white md:mx-auto">
+            <h2 className="uppercase sm:text-left md:text-center">
+              CONTACT DETAILS
+            </h2>
             <div className="flex flex-col mt-8 gap-4">
-              <p className="flex items-center gap-2">
+              <p className="flex items-center gap-2 sm:text-sm md:text-lg">
                 <MapPin color="#fff" />
                 Al Nad - Al Qasimia - Sharjah - United Arab Emirates
               </p>

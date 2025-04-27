@@ -40,7 +40,7 @@ const ProductShowcase = () => {
   ];
   return (
     <div className="container">
-      {items.map((product, index) => (
+      {items.map((product: any, index) => (
         <div key={index} className="mb-10">
           <div className="flex items-center justify-between mb-10">
             <div>
