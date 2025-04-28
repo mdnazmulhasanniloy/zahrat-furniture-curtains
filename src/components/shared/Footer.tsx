@@ -66,20 +66,30 @@ export default function Footer() {
               CONTACT DETAILS
             </h2>
             <div className="flex flex-col mt-8 gap-4">
-              <p className="flex items-center md:gap-2">
+              <a
+                href="https://maps.app.goo.gl/yH2bCg7rtNjrRUyU7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
                 <MapPin color="#fff" />
                 <span className="text-sm">
                   Al Nad - Al Qasimia - Sharjah - United Arab Emirates
                 </span>
-              </p>
-              <p className="flex items-center gap-2">
+              </a>
+
+              <a href="tel:+971569024192" className="flex items-center gap-2">
                 <Phone color="#fff" />
                 +971569024192
-              </p>
-              <p className="flex items-center gap-2">
+              </a>
+
+              <a
+                href="mailto:humayonkobir173@gmail.com"
+                className="flex items-center gap-2"
+              >
                 <Mail color="#fff" />
-                humayonkobir173 @gmail.com
-              </p>
+                humayonkobir173@gmail.com
+              </a>
             </div>
           </div>
           <div className="text-white mx-auto">
