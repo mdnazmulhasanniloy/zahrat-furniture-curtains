@@ -3,6 +3,7 @@ import Curtains from "@/components/ui/curtains/Curtains";
 import RollerBlinds from "@/components/ui/rollarblinds/RollarBlinds";
 import Tvcabinets from "@/components/ui/tvcabinets/Tvcabinets";
 import Wallpaper from "@/components/ui/wallpaper/Wallpaper";
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 const ProductShowcase = () => {
@@ -42,13 +43,24 @@ const ProductShowcase = () => {
     <div className="container">
       {items.map((product: any, index) => (
         <div key={index} className="mb-10">
-          <div className="flex items-center justify-between mb-10">
+          <div className="flex items-center justify-between mb-10 sm:px-1">
             <div>
               <h2 className="text-2xl font-medium">{product.title}</h2>
               <p>{product.description}</p>
             </div>
-            <Link href={product.link} className="text-primary hover:underline">
+            <Link
+              href={product.link}
+              className="text-primary hover:underline flex items-center gap-2"
+            >
               See all
+              <span className="arrow-wiggle">
+                <ArrowRight size={22} color="#dd885f" />
+              </span>
+              {/* <ArrowRight
+                size={22}
+                color="#dd885f"
+                className="wiggle-horizontal"
+              /> */}
             </Link>
           </div>
 

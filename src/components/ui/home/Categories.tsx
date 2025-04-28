@@ -37,7 +37,7 @@ const Categories = () => {
   return (
     <div className="container py-14">
       <div className="text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray">
+        <h2 className="text-2xl md:text-4xl font-bold text-gray">
           We do work furniture a little bit different.
         </h2>
         <p className="text-md md:text-lg">

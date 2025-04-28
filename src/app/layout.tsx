@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <QuickContactNav />
-        <div className="min-h-screen sm:mx-3">{children}</div>
+        <div className="min-h-screen">{children}</div>
         <Footer />
         <WhatsappHead />
       </body>
